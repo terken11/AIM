@@ -5,29 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>AIM Corporate</title>
 
+<!-- Tailwind CDN (GitHub-safe) -->
 <script src="https://cdn.tailwindcss.com"></script>
 
-<script>
-tailwind.config = {
-  theme: {
-    extend: {
-      colors: {
-        primaryBlue: "#0B1F3A",
-        accentRed: "#D62828",
-        lightGray: "#f3f4f6"
-      }
-    }
-  }
-</script>
 <style>
-body { font-family: Arial, Helvetica, sans-serif; }
+  body { font-family: Arial, Helvetica, sans-serif; }
 </style>
 </head>
 
 <body class="bg-white text-gray-800">
 
 <!-- ================= HEADER ================= -->
-<header class="bg-primaryBlue text-white">
+<header class="bg-blue-900 text-white">
   <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
 
     <div class="text-2xl font-bold tracking-widest">
@@ -35,15 +24,15 @@ body { font-family: Arial, Helvetica, sans-serif; }
     </div>
 
     <nav class="hidden md:flex space-x-8 text-sm uppercase">
-      <a href="#" class="hover:text-accentRed">Services</a>
-      <a href="#" class="hover:text-accentRed">Careers</a>
-      <a href="#" class="hover:text-accentRed">Contact</a>
+      <a href="#" class="hover:text-red-500">Services</a>
+      <a href="#" class="hover:text-red-500">Careers</a>
+      <a href="#" class="hover:text-red-500">Contact</a>
     </nav>
 
     <div class="hidden md:flex space-x-6 text-sm items-center">
-      <a href="#" class="hover:text-accentRed">Portal</a>
-      <a href="#" class="hover:text-accentRed">Tracking</a>
-      <a href="#" class="bg-accentRed px-4 py-2 rounded hover:bg-red-700">
+      <a href="#" class="hover:text-red-500">Portal</a>
+      <a href="#" class="hover:text-red-500">Tracking</a>
+      <a href="#" class="bg-red-600 px-4 py-2 rounded hover:bg-red-700">
         Quote
       </a>
     </div>
@@ -55,17 +44,18 @@ body { font-family: Arial, Helvetica, sans-serif; }
 <!-- ================= HERO ================= -->
 <section class="relative h-[70vh] bg-cover bg-center"
 style="background-image:url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d');">
-  <div class="absolute inset-0 bg-primaryBlue/70"></div>
+  <div class="absolute inset-0 bg-blue-900/70"></div>
 
   <div class="relative z-10 max-w-7xl mx-auto px-6 h-full flex items-center">
     <div class="text-white max-w-2xl">
       <h1 class="text-4xl md:text-5xl font-bold mb-6">
-        Placeholder Corporate Headline
+        Global Logistics. Smart Solutions.
       </h1>
-      <p class="mb-8 text-lg">
-        Placeholder supporting text that explains company positioning and global capability.
+      <p class="mb-8 text-lg opacity-90">
+        Delivering integrated supply chain solutions with reliability,
+        innovation, and global reach.
       </p>
-      <a href="#" class="border border-white px-6 py-3 hover:bg-white hover:text-primaryBlue transition">
+      <a href="#" class="border border-white px-6 py-3 hover:bg-white hover:text-blue-900 transition">
         Learn More
       </a>
     </div>
@@ -77,7 +67,7 @@ style="background-image:url('https://images.unsplash.com/photo-1586528116311-ad8
   <div class="text-center mb-14">
     <h2 class="text-3xl font-bold mb-4">Our Solutions</h2>
     <p class="text-gray-600 max-w-2xl mx-auto">
-      Placeholder paragraph describing enterprise-level integrated services.
+      End-to-end logistics services designed to move your business forward.
     </p>
   </div>
 
@@ -86,207 +76,112 @@ style="background-image:url('https://images.unsplash.com/photo-1586528116311-ad8
     <div class="group relative overflow-hidden">
       <img src="https://images.unsplash.com/photo-1553413077-190dd305871c"
         class="h-72 w-full object-cover">
-      <div class="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition"></div>
-      <div class="absolute bottom-6 left-6 text-white">
-        <h3 class="text-lg font-bold">Placeholder Service One</h3>
+      <div class="absolute inset-0 bg-black/40"></div>
+      <div class="absolute bottom-6 left-6 text-white font-bold">
+        Contract Logistics
       </div>
     </div>
 
     <div class="group relative overflow-hidden">
       <img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231"
         class="h-72 w-full object-cover">
-      <div class="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition"></div>
-      <div class="absolute bottom-6 left-6 text-white">
-        <h3 class="text-lg font-bold">Placeholder Service Two</h3>
+      <div class="absolute inset-0 bg-black/40"></div>
+      <div class="absolute bottom-6 left-6 text-white font-bold">
+        Project Logistics
       </div>
     </div>
 
     <div class="group relative overflow-hidden">
       <img src="https://images.unsplash.com/photo-1494415859740-21e878dd929d"
         class="h-72 w-full object-cover">
-      <div class="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition"></div>
-      <div class="absolute bottom-6 left-6 text-white">
-        <h3 class="text-lg font-bold">Placeholder Service Three</h3>
+      <div class="absolute inset-0 bg-black/40"></div>
+      <div class="absolute bottom-6 left-6 text-white font-bold">
+        Supply Chain Management
       </div>
     </div>
 
   </div>
 </section>
 
-<!-- ================= NEWS / PRESS RELEASE ================= -->
-<section class="bg-lightGray py-20">
+<!-- ================= NEWS ================= -->
+<section class="bg-gray-100 py-20">
   <div class="max-w-7xl mx-auto px-6">
-
     <h2 class="text-3xl font-bold mb-12">Latest News</h2>
 
-    <!-- News Item -->
     <div class="mb-16">
-      <span class="bg-accentRed text-white text-xs px-3 py-1 uppercase">Press Release</span>
+      <span class="bg-red-600 text-white text-xs px-3 py-1 uppercase">
+        Press Release
+      </span>
       <span class="text-sm text-gray-500 ml-4">01/01/2026</span>
 
       <h3 class="text-2xl font-semibold mt-4 mb-6">
-        Placeholder headline describing major partnership announcement.
+        AIM announces strategic expansion into new markets
       </h3>
 
       <img src="https://images.unsplash.com/photo-1581092334391-46f5a8b4f8fa"
         class="w-full h-[400px] object-cover">
     </div>
 
-    <!-- News Item -->
-    <div class="mb-16">
-      <span class="bg-accentRed text-white text-xs px-3 py-1 uppercase">Press Release</span>
-      <span class="text-sm text-gray-500 ml-4">02/01/2026</span>
-
-      <h3 class="text-2xl font-semibold mt-4 mb-6">
-        Placeholder headline describing facility expansion update.
-      </h3>
-
-      <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d"
-        class="w-full h-[400px] object-cover">
-    </div>
-
     <div class="text-center">
-      <button class="border border-primaryBlue px-8 py-3 hover:bg-primaryBlue hover:text-white transition">
+      <button class="border border-blue-900 px-8 py-3 hover:bg-blue-900 hover:text-white transition">
         See All News
       </button>
     </div>
-
   </div>
 </section>
 
-<!-- ================= CAREERS : JOIN US ================= -->
-<section class="bg-white py-24">
-  <div class="max-w-5xl mx-auto px-6 text-center">
-
-    <h2 class="text-3xl font-bold mb-6 text-primaryBlue">
-      JOIN US
-    </h2>
-
+<!-- ================= CAREERS ================= -->
+<section class="py-24 text-center">
+  <div class="max-w-5xl mx-auto px-6">
+    <h2 class="text-3xl font-bold mb-6 text-blue-900">Join Us</h2>
     <p class="text-gray-600 leading-relaxed">
-      At AIM Corporate, we are not just a global solutions provider; we are a
-      community of innovators, collaborators, and problem-solvers. With a
-      presence across multiple regions and a diverse workforce, we believe our
-      people are the key to our success.
-      <br /><br />
-      Join us on a journey where you can grow your career, embrace new
-      opportunities, and help shape the future of global logistics through
-      imagination, excellence, and commitment.
+      At AIM Corporate, our people are the heart of our success. Join a global
+      team that values innovation, collaboration, and growth.
     </p>
-
   </div>
 </section>
 
+<section class="bg-blue-900 py-20">
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
 
-<!-- ================= CAREERS : TESTIMONIAL ================= -->
-<section class="bg-primaryBlue py-20">
-  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 items-center gap-12">
-
-    <!-- Quote -->
     <div class="text-white">
-      <p class="text-xl leading-relaxed mb-6">
-        “As a Team Leader, I have the opportunity to create a strong team and
-        achieve meaningful results. The positive atmosphere at our location
-        ensures collaboration across departments and makes AIM one unified
-        team.”
+      <p class="text-xl mb-6">
+        “Working at AIM allows me to grow professionally while being part of
+        a collaborative and supportive team.”
       </p>
-
-      <p class="font-semibold">
-        Alex Morgan
-      </p>
-      <p class="text-sm opacity-80">
-        Team Lead – Operations
-      </p>
+      <p class="font-semibold">Alex Morgan</p>
+      <p class="text-sm opacity-80">Operations Team Lead</p>
     </div>
 
-    <!-- Image -->
-    <div class="flex justify-center md:justify-end">
-      <img
-        src="https://images.unsplash.com/photo-1607746882042-944635dfe10e"
-        alt="Employee"
-        class="h-[320px] object-contain"
-      />
-    </div>
-
+    <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e"
+      class="h-[320px] object-contain mx-auto">
   </div>
 </section>
 
-
-<!-- ================= CAREERS : FIND A JOB ================= -->
 <section class="bg-blue-500 py-20 text-white text-center">
-  <div class="max-w-4xl mx-auto px-6">
-
-    <h2 class="text-3xl font-bold mb-6">
-      Find a job
-    </h2>
-
-    <p class="mb-8 opacity-90">
-      At AIM Corporate, we offer diverse job opportunities that match your
-      skills and aspirations. Join a team that values your talent and supports
-      your journey toward success.
-    </p>
-
-    <a
-      href="#"
-      class="inline-flex items-center border border-white px-8 py-3 hover:bg-white hover:text-blue-500 transition"
-    >
-      Explore Opportunities →
-    </a>
-
-  </div>
+  <h2 class="text-3xl font-bold mb-6">Find a Job</h2>
+  <p class="mb-8">Explore career opportunities that match your ambition.</p>
+  <a href="#" class="border border-white px-8 py-3 hover:bg-white hover:text-blue-500 transition">
+    Explore Opportunities →
+  </a>
 </section>
 
-
-
-
-
-<!-- ================= CAREERS : DISCOVER LIFE ================= -->
-<section class="bg-primaryBlue py-20 text-white text-center">
-  <div class="max-w-4xl mx-auto px-6">
-
-    <h2 class="text-3xl font-bold mb-6">
-      Discover Life @ AIM
-    </h2>
-
-    <p class="mb-8 opacity-90">
-      Experience a workplace culture built on respect, diversity, innovation,
-      and growth. At AIM, your career is more than just a job — it’s a journey.
-    </p>
-
-    <a
-      href="#"
-      class="inline-flex items-center border border-white px-8 py-3 hover:bg-white hover:text-primaryBlue transition"
-    >
-      Discover Life @ AIM →
-    </a>
-
-  </div>
-</section>
-
-
-
-<!-- ================= CTA SECTION ================= -->
-<section class="bg-primaryBlue text-white py-16">
-  <div class="max-w-5xl mx-auto text-center px-6">
-    <h2 class="text-3xl font-bold mb-6">
-      Ready to Partner With AIM?
-    </h2>
-    <p class="mb-8">
-      Placeholder call-to-action encouraging users to connect with your team.
-    </p>
-    <a href="#" class="bg-accentRed px-8 py-3 rounded hover:bg-red-700 transition">
-      Contact Us
-    </a>
-  </div>
+<section class="bg-blue-900 py-20 text-white text-center">
+  <h2 class="text-3xl font-bold mb-6">Discover Life @ AIM</h2>
+  <p class="mb-8">More than a job — a journey of growth and purpose.</p>
+  <a href="#" class="border border-white px-8 py-3 hover:bg-white hover:text-blue-900 transition">
+    Discover Life →
+  </a>
 </section>
 
 <!-- ================= FOOTER ================= -->
-<footer class="bg-primaryBlue text-gray-300 pt-16 pb-8">
+<footer class="bg-blue-900 text-gray-300 pt-16 pb-8">
   <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-10">
 
     <div>
       <h3 class="text-white font-bold mb-4">AIM</h3>
       <p class="text-sm">
-        Placeholder corporate description text about the company and its global reach.
+        Delivering world-class logistics and supply chain solutions.
       </p>
     </div>
 
@@ -294,8 +189,8 @@ style="background-image:url('https://images.unsplash.com/photo-1586528116311-ad8
       <h4 class="text-white font-semibold mb-4">Company</h4>
       <ul class="space-y-2 text-sm">
         <li><a href="#" class="hover:text-white">About</a></li>
-        <li><a href="#" class="hover:text-white">Leadership</a></li>
         <li><a href="#" class="hover:text-white">Careers</a></li>
+        <li><a href="#" class="hover:text-white">News</a></li>
       </ul>
     </div>
 
@@ -310,17 +205,16 @@ style="background-image:url('https://images.unsplash.com/photo-1586528116311-ad8
 
     <div>
       <h4 class="text-white font-semibold mb-4">Contact</h4>
-      <p class="text-sm">Placeholder Address</p>
-      <p class="text-sm">Email: info@aim.com</p>
-      <p class="text-sm">Phone: +000 000 000</p>
+      <p class="text-sm">info@aim.com</p>
+      <p class="text-sm">+000 000 000</p>
     </div>
 
   </div>
 
   <div class="border-t border-gray-600 mt-10 pt-6 text-center text-sm">
-    © 2026 AIM Corporation. All Rights Reserved.
+    © 2026 AIM Corporation. All rights reserved.
   </div>
 </footer>
 
 </body>
-</html>
+      </html>
