@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>AIM Corporate</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AIM Corporate</title>
 
-<!-- Tailwind CDN (GitHub-safe) -->
-<script src="https://cdn.tailwindcss.com"></script>
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
 
-<style>
-  body { font-family: Arial, Helvetica, sans-serif; }
-</style>
+  <style>
+    body { font-family: Arial, Helvetica, sans-serif; }
+  </style>
 </head>
 
 <body class="bg-white text-gray-800">
@@ -19,31 +19,57 @@
 <header class="bg-blue-900 text-white">
   <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
 
+    <!-- Logo -->
     <div class="text-2xl font-bold tracking-widest">
       AIM
     </div>
 
+    <!-- Desktop Nav -->
     <nav class="hidden md:flex space-x-8 text-sm uppercase">
       <a href="services.html" class="hover:text-red-500">Services</a>
       <a href="#" class="hover:text-red-500">Careers</a>
       <a href="#" class="hover:text-red-500">Contact</a>
     </nav>
 
+    <!-- Desktop Actions -->
     <div class="hidden md:flex space-x-6 text-sm items-center">
       <a href="#" class="hover:text-red-500">Portal</a>
       <a href="#" class="hover:text-red-500">Tracking</a>
-      <a href="#" class="bg-red-600 px-4 py-2 rounded hover:bg-red-700">
+      <a href="#" class="bg-red-600 px-4 py-2 rounded hover:bg-red-700 transition">
         Quote
       </a>
     </div>
 
-    <div class="md:hidden text-2xl">☰</div>
+    <!-- Mobile Button -->
+    <button id="menuBtn" class="md:hidden text-3xl focus:outline-none">
+      ☰
+    </button>
   </div>
+
+  <!-- Mobile Menu -->
+  <nav id="mobileMenu" class="hidden md:hidden bg-blue-900 border-t border-white/20">
+    <ul class="px-6 py-6 space-y-4 text-sm uppercase">
+      <li><a href="services.html" class="block hover:text-red-500">Services</a></li>
+      <li><a href="#" class="block hover:text-red-500">Careers</a></li>
+      <li><a href="#" class="block hover:text-red-500">Contact</a></li>
+
+      <li class="border-t border-white/20 pt-4">
+        <a href="#" class="block hover:text-red-500">Portal</a>
+      </li>
+      <li><a href="#" class="block hover:text-red-500">Tracking</a></li>
+      <li>
+        <a href="#" class="inline-block bg-red-600 px-4 py-2 rounded hover:bg-red-700">
+          Quote
+        </a>
+      </li>
+    </ul>
+  </nav>
 </header>
 
 <!-- ================= HERO ================= -->
 <section class="relative h-[70vh] bg-cover bg-center"
-style="background-image:url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d');">
+  style="background-image:url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d');">
+
   <div class="absolute inset-0 bg-blue-900/70"></div>
 
   <div class="relative z-10 max-w-7xl mx-auto px-6 h-full flex items-center">
@@ -73,7 +99,7 @@ style="background-image:url('https://images.unsplash.com/photo-1586528116311-ad8
 
   <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8">
 
-    <div class="group relative overflow-hidden">
+    <div class="relative overflow-hidden">
       <img src="https://images.unsplash.com/photo-1553413077-190dd305871c"
         class="h-72 w-full object-cover">
       <div class="absolute inset-0 bg-black/40"></div>
@@ -82,7 +108,7 @@ style="background-image:url('https://images.unsplash.com/photo-1586528116311-ad8
       </div>
     </div>
 
-    <div class="group relative overflow-hidden">
+    <div class="relative overflow-hidden">
       <img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231"
         class="h-72 w-full object-cover">
       <div class="absolute inset-0 bg-black/40"></div>
@@ -91,7 +117,7 @@ style="background-image:url('https://images.unsplash.com/photo-1586528116311-ad8
       </div>
     </div>
 
-    <div class="group relative overflow-hidden">
+    <div class="relative overflow-hidden">
       <img src="https://images.unsplash.com/photo-1494415859740-21e878dd929d"
         class="h-72 w-full object-cover">
       <div class="absolute inset-0 bg-black/40"></div>
@@ -134,43 +160,18 @@ style="background-image:url('https://images.unsplash.com/photo-1586528116311-ad8
 <section class="py-24 text-center">
   <div class="max-w-5xl mx-auto px-6">
     <h2 class="text-3xl font-bold mb-6 text-blue-900">Join Us</h2>
-    <p class="text-gray-600 leading-relaxed">
-      At AIM Corporate, our people are the heart of our success. Join a global
-      team that values innovation, collaboration, and growth.
+    <p class="text-gray-600">
+      Our people are the heart of our success. Join a global team that values
+      innovation, collaboration, and growth.
     </p>
   </div>
 </section>
 
-<section class="bg-blue-900 py-20">
-  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
-
-    <div class="text-white">
-      <p class="text-xl mb-6">
-        “Working at AIM allows me to grow professionally while being part of
-        a collaborative and supportive team.”
-      </p>
-      <p class="font-semibold">Alex Morgan</p>
-      <p class="text-sm opacity-80">Operations Team Lead</p>
-    </div>
-
-    <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e"
-      class="h-[320px] object-contain mx-auto">
-  </div>
-</section>
-
-<section class="bg-blue-500 py-20 text-white text-center">
+<section class="bg-blue-900 py-20 text-white text-center">
   <h2 class="text-3xl font-bold mb-6">Find a Job</h2>
   <p class="mb-8">Explore career opportunities that match your ambition.</p>
-  <a href="#" class="border border-white px-8 py-3 hover:bg-white hover:text-blue-500 transition">
-    Explore Opportunities →
-  </a>
-</section>
-
-<section class="bg-blue-900 py-20 text-white text-center">
-  <h2 class="text-3xl font-bold mb-6">Discover Life @ AIM</h2>
-  <p class="mb-8">More than a job — a journey of growth and purpose.</p>
   <a href="#" class="border border-white px-8 py-3 hover:bg-white hover:text-blue-900 transition">
-    Discover Life →
+    Explore Opportunities →
   </a>
 </section>
 
@@ -216,5 +217,16 @@ style="background-image:url('https://images.unsplash.com/photo-1586528116311-ad8
   </div>
 </footer>
 
+<!-- ================= JS ================= -->
+<script>
+  const menuBtn = document.getElementById("menuBtn");
+  const mobileMenu = document.getElementById("mobileMenu");
+
+  menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+    menuBtn.textContent = mobileMenu.classList.contains("hidden") ? "☰" : "✕";
+  });
+</script>
+
 </body>
-      </html>
+        </html>
